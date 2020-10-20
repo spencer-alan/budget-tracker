@@ -7,7 +7,7 @@ function saveRecord(method, data) {
 
     request.onupgradeneeded = function(e) {
       const db = request.result;
-      db.createObjectStore("toBeStored", { keyPath: "_id" });
+      db.createObjectStore("toBeStored", { autoIncrement: true });
     };
 
     request.onerror = function(e) {
