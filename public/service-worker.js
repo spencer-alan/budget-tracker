@@ -4,7 +4,7 @@ const FILES_TO_CACHE = [
   "/",
   "/index.html",
   "/manifest.webmanifest",
-  "/assets/css/style.css",
+  "/assets/css/styles.css",
   "/assets/js/index.js",
   "/assets/images/icons/icon-192x192.png",
   "/assets/images/icons/icon-512x512.png"
@@ -12,16 +12,17 @@ const FILES_TO_CACHE = [
 
 // install
 self.addEventListener("install", function (evt) {
-  // pre cache image data
-  evt.waitUntil(
-    caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/images"))
-  );
-    
   // pre cache all static assets
   evt.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(FILES_TO_CACHE))
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log("Files have been cahed!")
+      return cache.addAll(FILES_TO_CACHE)
+    })
   );
-
+  
+  evt.waitUntil(
+    caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/transaction")) 
+  );
   // tell the browser to activate this service worker immediately once it
   // has finished installing
   self.skipWaiting();
