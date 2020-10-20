@@ -7,10 +7,9 @@ A web application that tracks your budget and can be used offline or online.
 
 1. Deployed Link
 2. Objective
-3. Languages
+3. Technologies
 4. Screenshot
-5. Video Demo
-6. License
+5. License
 
 ### Deployed Link
 
