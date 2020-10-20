@@ -14,24 +14,23 @@ A web application that tracks your budget and can be used offline or online.
 
 ### Deployed Link
 
-(Coming Soon)
+[Heroku Application Link](https://evening-island-84319.herokuapp.com/)
 
 ### Objective
 To make a web application that allows the user to track their budget when they are on trips or out for a night on the town and may not have the best internet access available at all times.
 
-### Languages 
+### Technologies
 
-- HTML
-- CSS
-- Javascript
+-Bootstrap
+-Javascript
+-Service Worker
+-IndexedDB
+-NoSQL
+-Mongoose
 
 ### Screenshot
 
-(Coming Soon)
-
-### Video Demo
-
-(Coming Soon)
+![Screenshot of Budget Graph](../blob/master/public/assets/images/screenshots/pwaBudgetScreenshot.png)
 
 ### License
 [MIT License used for this project](../blob/master/LICENSE)
