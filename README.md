@@ -30,7 +30,7 @@ To make a web application that allows the user to track their budget when they a
 
 ### Screenshot
 
-![Screenshot of Budget Graph](../blob/master/public/assets/images/screenshots/pwaBudgetScreenshot.png)
+![Screenshot of Budget Graph](../main/public/assets/images/screenshots/pwaBudgetScreenshot.png)
 
 ### License
-[MIT License used for this project](../blob/master/LICENSE)
+[MIT License used for this project](../main/LICENSE)
