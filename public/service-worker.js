@@ -6,6 +6,7 @@ const FILES_TO_CACHE = [
   "/manifest.webmanifest",
   "/assets/css/styles.css",
   "/assets/js/index.js",
+  "/assets/js/useIndexedDb.js",
   "/assets/images/icons/icon-192x192.png",
   "/assets/images/icons/icon-512x512.png"
 ];
@@ -15,7 +16,7 @@ self.addEventListener("install", function (evt) {
   // pre cache all static assets
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("Files have been cahed!")
+      console.log("Files have been cached!")
       return cache.addAll(FILES_TO_CACHE)
     })
   );
